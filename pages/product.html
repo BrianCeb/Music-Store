@@ -4,54 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
-    <header>
-        <div>
-            <div>
-                <p>MUSIC STORE</p>
-                <a href="../index.html"><img src="" alt="logo"></a>
-            </div>
-            <div>
-                <p>buscar producto</p>
-                <a href=""><img src="" alt="lupita"></a>
-            </div>
-            <div>
-                <a href=""><img src="" alt="carrito"></a>
-                <a href="">Mi cuenta</a>
-            </div>
+    <header class="header">
+        <section class="contenedor-header">
+        <div class="logo">
+            <p>MUSIC STORE</p>
+            <a href="../index.html"><img src="../assets/img/musica.png" alt="logo"></a>
         </div>
-
-        <nav>
-            <ul>
-                <li><a href="./ofertas.html">Ofertas</a></li>
-                <li><a href="./about.html">Quienes somos?</a></li>
-                <li><a href="">contactos</a></li>
+        <div class="search">
+            <p>Buscar producto</p>
+            <a href=""><img src="../assets/img/lupa.png" alt="lupita"></a>
+        </div>
+        <div class="header-der">
+            <a href="./car.html"><img src="../assets/img/carrito-de-compras.png" alt="carrito"></a>
+            <a class= "cuentas" href="">Mi cuenta</a><img src="../assets/img/usuario.png" alt="cuenta"></a>
+        </div>
+    </section>
+        <nav >
+            <ul class="nav-bar">
+                <li class="boton-nav"><a class="boton-text" href="./ofertas.html">Ofertas</a></li>
+                <li class="boton-nav"><a href="./pages/about.html">¿Quienes somos?</a></li>
+                <li class="boton-nav"><a href="">Contactos</a></li>
             </ul>
-        </nav>   
+        </nav>
+    
     </header>
+
     <main>
-        <div>
-            <img src="" alt="img product"> 
-            <p>Nombre Producto</p>
-            <p>$$$$$$</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad deserunt repellat architecto obcaecati sunt similique praesentium explicabo reprehenderit incidunt et. Voluptatum nemo officia debitis neque, deleniti autem? Odit, aspernatur quod.</p>
-            <a href="">añadir al carrito</a>
+        <section class="product">
+        <div class="producto-contenedor">
+            <!-- <div class="up"><i class="material-icons">straight</i></div> -->
+            <img class="img1" src="../assets/img/ejemplo-guitarra.jpg" alt="">
+            <img class="img2" src="../assets/img/ejemplo-guitarra.jpg" alt="">
+            <img class="img3" src="../assets/img/ejemplo-guitarra.jpg" alt="">
+            <img class="img4" src="../assets/img/ejemplo-guitarra.jpg" alt="">
+            <!-- <div class="down"><i class="material-icons">south</i></div> -->
         </div>
-        <div>
-            <p>Tambien te puede interesar</p>
-            <img src="" alt="product">
-            <img src="" alt="product">
-            <img src="" alt="product">
-            <img src="" alt="product">
-            <img src="" alt="product">
+        <div class="producto-descripcion">
+            <p class="title">Nombre Producto</p>
+            <p class="precio">$$$$$$</p>
+            <p class="descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad deserunt repellat architecto obcaecati sunt similique praesentium explicabo reprehenderit incidunt et. Voluptatum nemo officia debitis neque, deleniti autem? Odit, aspernatur quod.</p>
+            <a class="ver-mas" href="./car.html">añadir al carrito</a>
         </div>
+        </section>
+        <section class="sugerencia">
+            <p class="title">Tambien te puede interesar</p>
+            <div class="sugeridos">
+            <img src="../assets/img/ejemplo-guitarra.jpg" alt="product">
+            <img src="../assets/img/ejemplo-guitarra.jpg" alt="product">
+            <img src="../assets/img/ejemplo-guitarra.jpg" alt="product">
+            <img src="../assets/img/ejemplo-guitarra.jpg" alt="product">
+            <img src="../assets/img/ejemplo-guitarra.jpg" alt="product">
+        </div>
+    </section>
     </main>
     <footer>
-        <a href=""><img src="" alt="logo fb"></a>
-        <a href=""><img src="" alt="logo wpp"></a>
-        <a href=""><img src="" alt="logo mail"></a>
+        <a href=""><img src="../assets/img/facebook.png" alt="logo fb"></a>
+        <a href=""><img src="../assets/img/whatsapp.png" alt="logo wpp"></a>
+        <a href=""><img src="../assets/img/email.png" alt="logo mail"></a>
     </footer>
 </body>
 </html>

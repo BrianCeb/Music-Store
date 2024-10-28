@@ -7,55 +7,84 @@
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
-    <header>
-        <div>
-            <div>
-                <p>MUSIC STORE</p>
-                <a href="../index.html"><img src="" alt="logo"></a>
-            </div>
-            <div>
-                <p>buscar producto</p>
-                <a href=""><img src="" alt="lupita"></a>
-            </div>
-            <div>
-                <a href=""><img src="" alt="carrito"></a>
-                <a href="">Mi cuenta</a>
-            </div>
+    <header class="header">
+        <section class="contenedor-header">
+        <div class="logo">
+            <p>MUSIC STORE</p>
+            <a href="../index.html"><img src="../assets/img/musica.png" alt="logo"></a>
         </div>
-
-        <nav>
-            <ul>
-                <li><a href="/pages/ofertas.html">Ofertas</a></li>
-                <li><a href="./about.html">Quienes somos?</a></li>
-                <li><a href="">contactos</a></li>
+        <div class="search">
+            <p>Buscar producto</p>
+            <a href=""><img src="../assets/img/lupa.png" alt="lupita"></a>
+        </div>
+        <div class="header-der">
+            <a href="./car.html"><img src="../assets/img/carrito-de-compras.png" alt="carrito"></a>
+            <a class= "cuentas" href="">Mi cuenta</a><img src="../assets/img/usuario.png" alt="cuenta"></a>
+        </div>
+    </section>
+        <nav >
+            <ul class="nav-bar">
+                <li class="boton-nav"><a class="boton-text" href="./ofertas.html">Ofertas</a></li>
+                <li class="boton-nav"><a href="./about.html">¿Quienes somos?</a></li>
+                <li class="boton-nav"><a href="">Contactos</a></li>
             </ul>
-        </nav>   
+        </nav>
+    
     </header>
+
     <main>
-        <div>
-            <img src="" alt="">
+        <div class="carrito">
+            <div class="carrito-producto">
+                <div class="img-producto">
+                <img src="../assets/img/ejemplo-guitarra.jpg" alt="">
+                </div>
+                <div class="descripcion-container">
+                <div class="descripcion-producto">
+                <p>Producto</p>
+                <p>$$$$$</p>
+                </div>
+                <div class="boton-carrito">
+                    <a href="">eliminar</a>
+                    <a href="">guardar</a>
+                </div>
+            </div>
+            </div>
+                <div class="agregar-producto">
+                <p>1 unidad</p>
+                <img src="" alt="+">
+                </div>
+        
+    </div>
+    <div class="carrito">
+        <div class="carrito-producto">
+            <div class="img-producto">
+            <img src="../assets/img/ejemplo-guitarra.jpg" alt="">
+            </div>
+            <div class="descripcion-container">
+            <div class="descripcion-producto">
             <p>Producto</p>
             <p>$$$$$</p>
-            <p>1 unidad</p>
-            <a href="">eliminar</a>
-            <a href="">guardar</a>
+            </div>
+            <div class="boton-carrito">
+                <a href="">eliminar</a>
+                <a href="">guardar</a>
+            </div>
         </div>
-        <div>
-            <img src="" alt="">
-            <p>Producto</p>
-            <p>$$$$$</p>
-            <p>1 unidad</p>
-            <a href="">eliminar</a>
-            <a href="">guardar</a>
         </div>
-        <div>
-            <a href="">continuar compra</a>
+            <div class="agregar-producto">
+            <p>1 unidad</p>
+            <img src="" alt="+">
+            </div>
+        </div>
+    </div>
+        <div class="continuar-compra">
+            <a class="ver-mas" href="">Continuar compra</a>
         </div>
     </main> 
     <footer>
-        <a href=""><img src="" alt="logo fb"></a>
-        <a href=""><img src="" alt="logo wpp"></a>
-        <a href=""><img src="" alt="logo mail"></a>
+        <a href=""><img src="../assets/img/facebook.png" alt="logo fb"></a>
+        <a href=""><img src="../assets/img/whatsapp.png" alt="logo wpp"></a>
+        <a href=""><img src="../assets/img/email.png" alt="logo mail"></a>
     </footer>
 </body>
 </html>

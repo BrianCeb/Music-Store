@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Road+Rage&display=swap');
 
+
+/* reset */
 *{
     margin: 0;
-    padding: 0;                     /* reset */
+    padding: 0;
     box-sizing: border-box;
     --body-color: #d5cec3;
     --header-color: #C4BAAB;
@@ -11,6 +13,8 @@
     --color-2:#d5cec3;
     --color-3:#b5aaa6;
 }
+
+
 /* 
 font-family: "Poppins", sans-serif;
 
@@ -20,14 +24,18 @@ font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-style: normal;
 }
+
+/*----------------------HEADER-------------------*/
 .header {
     background-color: #d5cec3;
     background-image: linear-gradient(0deg, #d5cec3 0%, #f7f2de 55%, #d5cec3 100%);
     display: flex;
     justify-content: space-between;
+    justify-items: center;
     align-items: center;
     flex-direction: column;
-    margin-bottom: 10px;;
+    margin-bottom: 2px;
+
 }
 header img{
     width: 20px;
@@ -37,51 +45,45 @@ header img{
     width: 100%;
     display: flex;
     justify-content: space-between;
-}
-.title{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin :.625rem ;
+    padding: 0px 12px 0px 12px;
+
 }
 .logo{
     display: flex;
     align-items: center;
+    gap: .375rem;
 }
 .search{
     display: flex;
     background-color:var(--color-1);
-    padding: 10px;
+    padding: 2px 10px 2px 10px;
     border-radius: 20px;
-    margin: 10px;
+    margin: 6px;
 }
 .search img{
-    width: 20px;
-    height: 1.25rem;
+    width: 15px;
+    height: 15px;
 }
 .header-der{
     width: 200px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
+    gap: 10px;
 }
 .cuentas{
     display: flex;
     justify-content: right;
     font-weight: bolder;
 }
+
+/*----------------------/HEADER-------------------*/
+
+/*----------------------NAV BAR-------------------*/
 .nav-bar{
     display: flex;
     /* gap: 20px; */
     list-style: none;
-
-}
-body{
-    font-family: "Poppins", sans-serif;
-    background-color: #f7f2de;
-    background-image: linear-gradient(180deg, #f7f2de 0%, #d5cec3 76%);
-    min-height: 100vh;
-
 }
 .boton-nav{
     color: white;
@@ -129,17 +131,25 @@ nav ul li a:link, :visited, :hover, :active{
     color: black;
     text-decoration: none;
 }
+/*----------------------/NAV BAR-------------------*/
+/*----------------------BARRA ICONOS-------------------*/
+
 .barra-contenedor{
     display: flex;
-    border: 5px solid black;
+    border: 2px solid rgb(108, 102, 102) ;
+    border-right: none;
+    border-left: none;
     justify-content: space-around;
+    height: 100%;
 }
 .barra-iconos{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 6px;
+    line-height: 12px;
+    gap: 0;
     /* padding: 25px */
     /* margin: 1.25rem; */
     width: 100% ;
@@ -151,16 +161,55 @@ nav ul li a:link, :visited, :hover, :active{
     
 }
 .barra-iconos div {
-    margin: 20px;
+    margin: 10px;
     display: flex;
 }
 .barra-iconos img{
     display: flex;
     align-items: center;
     justify-content:space-evenly;
-    width: 80px;
-    height: 80px;
+    width: 30px;
+    height: 30px;
 }
+
+
+/*----------------------/BARRA ICONOS-------------------*/
+/* ----------------FOOTER------------------*/
+footer{
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #DFCB7C;
+    position: sticky;
+    bottom: 0;
+}
+footer img{
+    width: 15px;
+    height: 15px;
+}
+/* ----------------/FOOTER------------------*/
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin :.625rem ;
+}
+
+
+body{
+    font-family: "Poppins", sans-serif;
+    font-size: small;
+    background-color: #f7f2de;
+    background-image: linear-gradient(180deg, #f7f2de 0%, #d5cec3 76%);
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;    
+    margin: 0;
+}
+/* ----------------CATEGORIAS------------------*/
+
 .categorias{
     display: grid;
     grid-row-gap: 10px;
@@ -170,7 +219,7 @@ nav ul li a:link, :visited, :hover, :active{
     grid-template-rows: 3fr 3fr ;
     justify-content: center;
 }
-.title-categoria{
+.title{
     display: flex;
     justify-content: center;
 }
@@ -180,15 +229,18 @@ nav ul li a:link, :visited, :hover, :active{
     align-items: center;
     flex-direction: column;
     position: relative;
+    
 }
 .card-categoria img{
-    width: 400px;
-    height: 250px;
+    width: 300px;
+    height: 150px;
+    object-fit: cover;
     border-radius: 20px;
     border-radius: 50px;
     background: #e0e0e0;
     box-shadow:  10px 10px 30px #bebebe,
                 -10px -10px 30px #ffffff;
+                
 }
 .card-categoria img:active{
     color: #666;
@@ -213,6 +265,10 @@ nav ul li a:link, :visited, :hover, :active{
     justify-content: center;
     align-items: center;
 }
+
+/* ----------------/CATEGORIAS------------------*/
+
+
 .ubicacion{
     display: flex;
     flex-direction: column;
@@ -238,6 +294,7 @@ nav ul li a:link, :visited, :hover, :active{
     gap: 2.5rem;
 }
 .about{
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -248,17 +305,8 @@ nav ul li a:link, :visited, :hover, :active{
     width: 400px;
     height: 200px;
 }
-footer{
-    width: 100%;
-    padding: 20px;
-    display: flex;
-    justify-content: space-around;
-    background-color: #DFCB7C;
-    bottom: 0;
-    position: absolute;
-    /* bottom: 0; */
-    /* position: absolute; */
-}
+
+
 .sugeridos{
     display: flex;
 }
@@ -292,14 +340,31 @@ footer{
     margin: 30px;
     justify-content:space-around;
     align-items: center;
-    grid-template-rows: 10% 15% 15% 15% 10%;
+    grid-template-rows: 15% 15% 15% ;
     grid-template-columns: 20% 30% 30%;
     grid-template-areas: 
-    
     "img2 img1 img1"
     "img3 img1 img1"
     "img4 img1 img1"
     ;
+}
+.mas{
+    width: 15px;
+    height: 15px;
+}
+.precio{
+    border-radius: 10px;
+    background-color: #c5c5c5;
+    width: 15%;
+    display: flex;
+    justify-content: center;}
+.total{
+    padding: 10px;
+    font-weight: bold;
+    background-color: #d5cec3;
+    display: flex;
+    justify-content: right;
+    margin: 10px;
 }
 .down{
     display: flex;
@@ -334,14 +399,7 @@ footer{
     height: 140px;
 }
 
-footer img{
-    width: 20px;
-    height: 20px;
-}
 
-.productos-container{
-    width:100%;
-}
 .off img{
     width: 30px;
     height: 30px;
@@ -354,12 +412,17 @@ footer img{
 .card-container{
     width: 100%;
     display:grid;
-    grid-template-columns: 3fr 3fr 3fr;
+    grid-template-columns: 30% 30% 30% ;
     grid-template-rows: 3fr 3fr ;
     gap: 2.5rem;
-    justify-content: center;
+    align-items: center;
+    justify-items: center;
     margin: 40px;
-    margin-left: 60px;
+}
+.card-container .card{
+    display: flex;
+    justify-items: center;
+    align-items: center;
 }
 .card{
     width: 250PX;
@@ -398,6 +461,7 @@ footer img{
 .ver-mas {
     display: flex;
     justify-content: center;
+    align-items: center;
     color: #090909;
     padding: 0.7em 1.7em;
     font-size: 18px;
@@ -501,6 +565,16 @@ footer img{
     .ubicacion-text{
         flex-direction: column-reverse;
     }
+    .card-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+    }
+    .card-categoria{
+        justify-items: center;
+        align-items: center;
+    }
 }
 @media (max-width:580px){
     .ubicacion-text img {
@@ -509,5 +583,24 @@ footer img{
     }
     .nav-bar {
         flex-direction: column;
+    }
+}
+@media (max-width:1200px){
+    .card-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+    }
+    .card-img img{
+        width: 75%;
+        height: 75%;
+        object-fit: contain;
+    }
+}
+@media (min-width:1020px){
+    .about{
+        margin-top: 40px;
+        margin-bottom: 80px;
     }
 }

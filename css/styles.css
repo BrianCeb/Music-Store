@@ -33,6 +33,7 @@ body{
     height: 100%;
     overflow-x: hidden;    
     margin: 0;
+    background-repeat: no-repeat;
 }
 /*----------------------HEADER-------------------*/
 .header {
@@ -574,6 +575,17 @@ footer img{
     justify-items: center;
 }
 /* ----------------/CARRITO------------------*/
+
+/* ----------------BOOTSTRAP------------------*/
+.color-b{
+    background-color: #DFCB7C;
+}
+.text-b{
+    color:#DFCB7C;
+}
+
+
+/* ----------------/BOOTSTRAP------------------*/
 
 .boton-container{
     display: flex;

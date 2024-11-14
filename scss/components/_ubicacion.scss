@@ -1,0 +1,25 @@
+.ubicacion {
+    @include flex;
+    flex-direction: column;
+    /* background-color: var(--color-1); */
+    background: rgb(213, 206, 195);
+    background: linear-gradient(180deg, rgba(213, 206, 195, 1) 0%, rgba(247, 242, 222, 1) 30%);
+    margin-bottom: 10px;
+
+    h2 {
+        margin: 30px;
+    }
+
+    img {
+        width: 400px;
+        height: 200px;
+    }
+
+    .ubicacion-text {
+        @include flex;
+        width: 70%;
+        padding-bottom: 30px;
+        gap: 2.5rem;
+    }
+
+}

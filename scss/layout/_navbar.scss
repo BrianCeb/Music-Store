@@ -1,0 +1,52 @@
+.nav-bar {
+    display: flex;
+    /* gap: 20px; */
+    list-style: none;
+    justify-content: space-around;
+}
+
+.boton-nav {
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 30px;
+    width: 150px;
+    border-radius: 10px;
+    background-color: map-get($color, color-3);
+    background-size: 800px;
+
+}
+
+.boton-text {
+    color: white;
+    @include flex;
+    margin: .625rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    /* padding: 10px 20px;
+    margin: 0px 10px; */
+    background-image: linear-gradient(to top, rgba(245, 246, 252, 0.04), #fffbe9),
+        linear-gradient(to bottom, rgba(245, 246, 252, 0.0), #e4e3e0),
+        url("../assets/img/background-nav.jpg");
+    width: 100%;
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: #e0e0e0;
+    font-weight: bold;
+
+    ul li {
+        margin: 20px;
+        a:link,
+        :visited,
+        :hover,
+        :active {
+            color: black;
+            text-decoration: none;
+        }        
+    }
+}

@@ -1,0 +1,21 @@
+@media (max-width: 580px) {
+    .ubicacion-text img {
+        width: 60%;
+        height: 60%;
+    }
+
+    .nav-bar {
+        flex-direction: column;
+    }
+
+    .card-categoria {
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .total{
+        justify-content: center;
+        align-items: center;
+    }
+}

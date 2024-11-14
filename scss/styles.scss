@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Road+Rage&display=swap');
+
+//1 - utilities
+
+@import "./utilities/maps";
+
+@import "./utilities/mixins/mixinflex";
+
+@import "./utilities/mixins/mixinflexdin";
+
+//2 - base
+@import "./base/reset";
+
+@import "./base/tipografia";
+
+//3 - layout
+
+@import "./layout/body";
+
+@import "./layout/header";
+
+@import "./layout/navbar";
+
+@import "./layout/footer";
+
+
+//4- components
+
+@import "./components/barraico" ; 
+
+@import "./components/categorias";
+
+@import "./components/ubicacion";
+
+@import "./components/about"; 
+
+@import "./components/ofertas" ; 
+
+@import "./components/producto";
+
+@import "./components/carrito";
+
+@import "./components/bootstrap";
+
+@import "./components/animaciones";
+
+// media query
+
+@import "./layout/media/media1024";
+
+@import "./layout/media/media580";
+
+

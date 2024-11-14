@@ -1,0 +1,68 @@
+
+.title {
+    @include flex;
+    margin: .625rem;
+}
+
+.categorias {
+    display: grid;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    grid-gap: 10 1.25rem;
+    grid-template-columns: 3fr 3fr 3fr;
+    grid-template-rows: 3fr 3fr;
+    justify-content: center;
+}
+
+.card-categoria {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+
+    img {
+        width: 300px;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 20px;
+        border-radius: 50px;
+        background: #e0e0e0;
+        box-shadow: 10px 10px 30px #bebebe,
+            -10px -10px 30px #ffffff;
+
+        &:active {
+            color: #666;
+            box-shadow: 0px 0px 0px #c5c5c5,
+                0px 0px 0px #ffffff,
+                inset 4px 4px 12px #c5c5c5,
+                inset -4px -4px 12px #ffffff;
+        }
+    }
+
+    p {
+        position: absolute;
+        bottom: 20px;
+        left: 80px;
+        font-family: "Road Rage", sans-serif;
+        font-size: 40px;
+        color: aliceblue;
+        text-shadow: 2px 2px 3px black;
+    }
+}
+
+.boton-vm {
+    padding: 15px;
+    @include flex;
+}
+
+.card-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 3fr 3fr;
+    gap: 2.5rem;
+    align-items: center;
+    justify-items: center;
+    /* margin: 40px; */
+}

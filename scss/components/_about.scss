@@ -1,7 +1,7 @@
 .about {
     @include flex ;
     flex-direction: column;
-    margin-bottom: 10px;
+    // margin-bottom: 10px;
     img {
         width: 400px;
         height: 200px;
@@ -17,10 +17,7 @@
     h2 {
         margin: 30px;
     }
-    img {
-        width: 400px;
-        height: 200px;
-    }
+
 }
 .ubicacion-text {
     @include flex;

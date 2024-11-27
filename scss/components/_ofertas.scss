@@ -34,6 +34,12 @@
         background: #e0e0e0;
         box-shadow: 10px 10px 30px #bebebe,
             -10px -10px 30px #ffffff;
+
+        transition: all 300ms;
+        &:hover {
+            transform: scale(1.15);
+        }
+
         /* box-shadow: 5px 5px 5px 5px gray; */
     }
 
@@ -57,22 +63,26 @@
         border: #242323;
         text-decoration: none;
         border-radius: 10px;
-        width: 60px;
+        width: 80px;
         height: 30px;
+        margin-top: 10px;
         box-shadow: 6px 6px 12px #c5c5c5,
             -6px -6px 12px #ffffff;
-        margin: 10px;
-
+        // margin: 10px;
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
         a {
             text-decoration: none;
         }
+
         a:link,
         :visited,
         :hover,
         :active {
             color: black;
             text-decoration: none;
-        }        
+        }
 
     }
 }
